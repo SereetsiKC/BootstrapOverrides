@@ -1,0 +1,108 @@
+$utilities: () !default;
+$utilities: map-merge(
+    (
+        (
+            "margin": (
+                property: margin,
+                class: margin,
+                units: search-list($units, (pixels, percentage)),
+                loopers: search-list($units-loopers, (pixels, percentage)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "margin-top": (
+                property: margin-top,
+                class: margin-top,
+                units: search-list($units, (pixels, percentage, screen-height)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-height)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "margin-bottom": (
+                property: margin-bottom,
+                class: margin-bottom,
+                units: search-list($units, (pixels, percentage, screen-height)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-height)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "margin-right": (
+                property: margin-right,
+                class: margin-right,
+                units: search-list($units, (pixels, percentage, screen-width)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-width)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "margin-left": (
+                property: margin-left,
+                class: margin-left,
+                units: search-list($units, (pixels, percentage, screen-width)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-width)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "padding": (
+                property: padding,
+                class: padding,
+                units: search-list($units, (pixels, percentage)),
+                loopers: search-list($units-loopers, (pixels, percentage)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "padding-top": (
+                property: padding-top,
+                class: padding-top,
+                units: search-list($units, (pixels, percentage, screen-height)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-height)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "padding-bottom": (
+                property: padding-bottom,
+                class: padding-bottom,
+                units: search-list($units, (pixels, percentage, screen-height)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-height)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "padding-right": (
+                property: padding-right,
+                class: padding-right,
+                units: search-list($units, (pixels, percentage, screen-width)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-width)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+            "padding-left": (
+                property: padding-left,
+                class: padding-left,
+                units: search-list($units, (pixels, percentage, screen-width)),
+                loopers: search-list($units-loopers, (pixels, percentage, screen-width)),
+                important: true,
+                values: (
+                    auto: auto,
+                ),
+            ),
+        )
+    ),
+    $utilities
+);

@@ -102,6 +102,42 @@ $utilities: map-merge(
                     auto: auto,
                 ),
             ),
+            "color-grays": (
+                property: color,
+                class: tc,
+                important: true,
+                values: $grays
+            ),
+            "color-themes": (
+                property: color,
+                class: tc,
+                important: true,
+                values: $theme-colors
+            ),
+            "color-defaults": (
+                property: color,
+                class: tc,
+                important: true,
+                values: $colors
+            ),
+            "back-color-grays": (
+                property: color,
+                class: bc,
+                important: true,
+                values: $grays
+            ),
+            "back-color-themes": (
+                property: color,
+                class: bc,
+                important: true,
+                values: $theme-colors
+            ),
+            "back-color-defaults": (
+                property: color,
+                class: bc,
+                important: true,
+                values: $colors
+            )
         )
     ),
     $utilities
